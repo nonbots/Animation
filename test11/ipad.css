@@ -1,0 +1,115 @@
+#container {
+  background-color: transparent;
+  z-index: 7;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  display: none;
+}
+
+#textnew {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 2em;
+  text-align: center;
+}
+
+.text1 {
+  animation-name: diamondOrigin;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes diamondOrigin {
+
+  100% {
+    font-size: 2em;
+    transform: scale(890);
+  }
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+#intro {
+  background-color: black;
+}
+input
+{
+  cursor: pointer;
+  color: rgb(184, 179, 179);
+  margin: auto;
+}
+
+#textInput {
+  transform: translate(-50%, 0%);
+  z-index: 8;
+}
+
+#h1 {
+  color: white;
+ 
+  text-align: center;
+  margin: 10%;
+}
+
+#h1a,
+#h1b {
+  color: white;
+  display: none;
+}
+
+#h1b {
+  color: black;
+  width: 70%;
+  margin: auto;
+  display: grid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*Media Query:Phone*/
+@media (max-width:5.5in) {
+  #h1 {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 500
+  }
+
+  #h1a {
+    font-size: .8em;
+  }
+
+  #h1b {
+    font-size: .8em;
+  }
+
+  #textInput {
+    font-size: .5em;
+
+  }
+
+  #textnew {
+    font-weight: 300;
+    font-size: .9em;
+  }
+
+  @keyframes diamondOrigin {
+
+    100% {
+      front-size: 2em;
+      font-weight: 500;
+
+      transform: scale(225);
+    }
+
+  }
+}
